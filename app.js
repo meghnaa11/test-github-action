@@ -9,12 +9,12 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
-    var height = Number(req.body.height);
-    var weight = Number(req.body.weight);
-    var result = weight / (height*height);
+    var h = Number(req.body.height);
+    var w = Number(req.body.weight);
+    var result = w / (h*h);
     res.send("Your BMI is: " + Math.round(result));
 });
-
+ 
 app.listen("3000", function() {
     console.log("Server started at port 3000");
 });
