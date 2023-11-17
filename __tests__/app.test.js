@@ -3,12 +3,12 @@ const app = require('../app');
 
 
 describe('POST /register', () => {
-    it('should register a user', async () => {
+    it('should register a user', () => {
         const x = 4;
         expect(x).toBe(4); 
     });
 
-    it('should handle user registration failure', async () => {
+    it('should handle user registration failure', () => {
         const y = 20;
 
         expect(y).toBe(20);  
