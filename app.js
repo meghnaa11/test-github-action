@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res) {
     res.sendFile(__dirname+"/bmiCalculator.html");
-});
+}); 
 
 app.post("/", function(req, res) {
     var h = Number(req.body.height);
